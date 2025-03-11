@@ -1,0 +1,243 @@
+/* General Styling */
+#contact {
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgba(245, 245, 245, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Contact Content */
+.contact-content {
+    flex: 2;
+    padding: 20px;
+    color: #fff;
+}
+
+.contact-content h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.contact-details {
+    width: 90%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.contact-item span {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 0 0 10px;
+    background-color: #D96F33;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.contact-item p {
+    font-size: 18px;
+    margin: 0 0 0 10px;
+}
+
+.contact-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 3;
+    padding: 20px;
+}
+
+input, textarea {
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+textarea {
+    min-height: 80px;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 1px solid #005E6A;
+}
+
+.input-group span {
+    color: red;
+}
+
+/* Submit Button */
+.submit-button {
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #005E6A;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #003E4A;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .contact {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+
+    .contact-content, .contact-form {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-content h2 {
+        font-size: 30px;
+    }
+
+    .contact-content p {
+        font-size: 16px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-content h2 {
+        font-size: 26px;
+    }
+
+    .contact-content p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Screens */
+@media screen and (max-width: 480px) {
+    .contact {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .contact-content h2 {
+        font-size: 22px;
+    }
+
+    .contact-content p {
+        font-size: 14px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    input, textarea {
+        font-size: 12px;
+    }
+
+    .submit-button {
+        height: 35px;
+        font-size: 12px;
+    }
+}

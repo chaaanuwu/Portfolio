@@ -1,0 +1,37 @@
+.navSide-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+    gap: 10px;
+}
+
+.navSide-list li a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    text-align: right;
+    font-size: 16px; /* Default size */
+    transition: font-size 0.3s ease-in-out;
+}
+
+/* Highlight active link - Only increase font size */
+.navSide-list li a.active {
+    font-size: 36px; /* Larger font for active link */
+}
+
+@media screen and (max-width: 768px) {
+    .navSide-list {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,83 @@
+.skills {
+    background-color: rgb(27, 27, 27);
+    padding: 3rem 0; /* Increased padding for better spacing */
+    color: #fff;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skill-items {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Swiper styles */
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    background-color: #444; /* Light dark background for each slide */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    min-width: 200px;
+    padding: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide:hover {
+    background-color: #666; /* Hover effect for the slides */
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .skill-items {
+        width: 90%;
+    }
+
+    .skills h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-items {
+        width: 95%;
+    }
+
+    .swiper-slide {
+        font-size: 1rem;
+    }
+
+    .skills h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust Swiper settings for smaller screens */
+    .swiper-container {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-items {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        font-size: 0.9rem;
+    }
+}

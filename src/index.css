@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(100deg, #005E6A, #D96F33);
+  font-family: 'Quicksand', sans-serif;
+}
